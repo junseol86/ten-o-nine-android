@@ -1,6 +1,7 @@
 package com.hyeonmin.kface.tenonine.activities
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.view.Window
 
@@ -22,5 +23,8 @@ class IntroActivity : Activity() {
 
     fun getTenONineAccesstoken(str: String) {
         Singleton.tenONineAccessToken = JSONObject(str)["access_token"].toString()
+        var intent = Intent(this, WebViewActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }

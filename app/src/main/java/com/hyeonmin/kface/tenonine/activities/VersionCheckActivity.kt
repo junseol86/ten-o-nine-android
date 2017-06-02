@@ -19,7 +19,6 @@ class VersionCheckActivity : BaseActivity() {
 
         versionCode = packageManager.getPackageInfo("com.akadev.waitingmom", 0).versionCode
 
-
         var packageInfo = getPackageInfo(this, PackageManager.GET_SIGNATURES)
         for (signature in packageInfo.signatures)
             try {
@@ -30,10 +29,6 @@ class VersionCheckActivity : BaseActivity() {
             } catch (e: Exception) {
                 println(e)
             }
-
         checkSession()
     }
-
-
-
 }

@@ -48,7 +48,7 @@ open class TenONineLoginAsyncTask(activity: IntroActivity) : AsyncTask<String, R
         return jsonHtml.toString()
     }
 
-    open override fun onPostExecute(str: String) {
+    override fun onPostExecute(str: String) {
         activity.getTenONineAccesstoken(str)
     }
 }

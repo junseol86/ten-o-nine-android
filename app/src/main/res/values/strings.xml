@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TenONine</string>
+    <string name="app_name">Ten-O-Nine</string>
     <string name="kakao_app_key">e4e8865564ec7b8c6471ef8495261819</string>
     <string name="text_for_login_kakao_account">Log in with Kakao</string>
 

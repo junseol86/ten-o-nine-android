@@ -8,26 +8,27 @@
     <application
         android:name=".activities.kakao.GlobalApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:supportsRtl="true">
-        <activity android:name=".activities.VersionCheckActivity">
+        <activity android:name=".activities.VersionCheckActivity" android:theme="@style/noAnimTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.kakao.RootLoginActivity" />
-        <activity android:name=".activities.kakao.SampleSignupActivity" />
-        <activity android:name=".activities.kakao.SampleLoginActivity" />
-        <activity android:name=".activities.kakao.usermgmt.UsermgmtMainActivity" />
+        <activity android:name=".activities.kakao.RootLoginActivity" android:theme="@style/noAnimTheme"/>
+        <activity android:name=".activities.kakao.SampleSignupActivity" android:theme="@style/noAnimTheme"/>
+        <activity android:name=".activities.kakao.SampleLoginActivity" android:theme="@style/noAnimTheme"/>
+        <activity android:name=".activities.kakao.usermgmt.UsermgmtMainActivity" android:theme="@style/noAnimTheme"/>
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="@string/kakao_app_key" />
 
-        <activity android:name=".activities.IntroActivity"></activity>
+        <activity android:name=".activities.IntroActivity" android:theme="@style/noAnimTheme"/>
+        <activity android:name=".activities.WebViewActivity" android:theme="@style/noAnimTheme"></activity>
     </application>
 
 </manifest>

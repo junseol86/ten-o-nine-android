@@ -11,18 +11,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true">
-        <TextView
-            android:text="@string/text_login_fragment"
-            android:textColor="@color/color6"
-            android:textSize="25sp"
-            android:drawableTop="@drawable/icon_login"
-            android:drawablePadding="22dp"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        >
+        <ImageView
+            android:id="@+id/intro_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"/>
-
+            android:src="@drawable/intro_logo"
+            />
     </RelativeLayout>
     <com.kakao.usermgmt.LoginButton
         android:id="@+id/login_button_fragment"

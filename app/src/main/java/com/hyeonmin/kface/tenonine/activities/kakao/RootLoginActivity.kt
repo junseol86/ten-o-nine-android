@@ -38,6 +38,7 @@ class RootLoginActivity : BaseActivity(), View.OnClickListener {
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_intro)
 
         if (!Session.getCurrentSession().checkAndImplicitOpen()) {
             setContentView(R.layout.layout_common_kakao_login)

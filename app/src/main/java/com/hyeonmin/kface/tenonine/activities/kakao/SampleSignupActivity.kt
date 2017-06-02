@@ -44,6 +44,7 @@ open class SampleSignupActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        setContentView(R.layout.activity_intro)
         requestMe()
     }
 
